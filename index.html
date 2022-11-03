@@ -15,22 +15,42 @@
 <body>
     <div class="container">
         <h1>Bateria</h1>
+        <h2>aperte as letras correspondentes do seu teclado</h2>
         <div class="teclas-container">
-            <div class="tecla">Q</div>
-            <div class="tecla">W</div>
-            <div class="tecla">E</div>
-            <div class="tecla">A</div>
-            <div class="tecla">S</div>
-            <div class="tecla">D</div>
-            <div class="tecla">Z</div>
-            <div class="tecla">X</div>
-            <div class="tecla">C</div>
+            <div id="tecla-q" class="tecla">Q</div>
+            <div id="tecla-w" class="tecla">W</div>
+            <div id="tecla-e" class="tecla">E</div>
+            <div id="tecla-a" class="tecla">A</div>
+            <div id="tecla-s" class="tecla">S</div>
+            <div id="tecla-d" class="tecla">D</div>
+            <div id="tecla-z" class="tecla">Z</div>
+            <div id="tecla-x" class="tecla">X</div>
+            <div id="tecla-c" class="tecla">C</div>
         </div>
         <div class="sequencia">
+            <div class="instrucao">O espaço e as outras letras são entendidos como uma "nota vazia", sendo utilidado para dar cadência 
+                e espaços vazios entre as notas
+            </div>
             <input type="text" placeholder="Escreva sua sequencia e deixe tocando...">
+        </div>
+        <div class="timer">
+            <div class="instrucao">Escreva abaixo apenas o numero que irá representar o tempo em segundos que um som irá
+                distar do outro
+            </div>
+            <input type="number">
         </div>
         <div class="botao">Tocar</div>
     </div>
+
+    <audio preload="auto" id="aud_a" src="sounds/keya.wav"></audio>
+    <audio preload="auto" id="aud_c" src="sounds/keyc.wav"></audio>
+    <audio preload="auto" id="aud_d" src="sounds/keyd.wav"></audio>
+    <audio preload="auto" id="aud_e" src="sounds/keye.wav"></audio>
+    <audio preload="auto" id="aud_q" src="sounds/keyq.wav"></audio>
+    <audio preload="auto" id="aud_s" src="sounds/keys.wav"></audio>
+    <audio preload="auto" id="aud_w" src="sounds/keyw.wav"></audio>
+    <audio preload="auto" id="aud_x" src="sounds/keyx.wav"></audio>
+    <audio preload="auto" id="aud_z" src="sounds/keyz.wav"></audio>
 
 
     <script src="script.js"></script>
